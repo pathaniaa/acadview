@@ -49,5 +49,16 @@ function show() {
     };
 }
  
+// checked and line through on string
+var task=document.querySelector('todos');
+todos.addEventListener('click',function(ev)
+  {
+      if (ev.target.tagName==='LI')
+    {
+        ev.target.classList.toggle('checked');
+    }
+  },false);
+
+
 document.getElementById('add').addEventListener('click', add);
 show();
