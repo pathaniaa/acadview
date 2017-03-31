@@ -12,6 +12,7 @@ function add() {
  
     var todos = get_todos();
     todos.push(task);
+    $("#task").val("");
     localStorage.setItem('todo', JSON.stringify(todos));
  
     show();
@@ -55,7 +56,10 @@ todos.addEventListener('click',function(ev)
   {
       if (ev.target.tagName==='LI')
     {
-        ev.target.classList.toggle('checked');
+        
+        var l = ev.target;
+		$("#done").append(l);
+        #ev.target.classList.toggle('checked');
     }
   },false);
 
