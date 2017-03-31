@@ -12,7 +12,7 @@ function add() {
  
     var todos = get_todos();
     todos.push(task);
-    $("#task").val("");
+ 
     localStorage.setItem('todo', JSON.stringify(todos));
  
     show();
