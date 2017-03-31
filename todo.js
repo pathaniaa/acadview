@@ -57,9 +57,8 @@ todos.addEventListener('click',function(ev)
       if (ev.target.tagName==='LI')
     {
         
-        var l = ev.target;
-		$("#done").append(l);
-        #ev.target.classList.toggle('checked');
+        
+        ev.target.classList.toggle('checked');
     }
   },false);
 
